@@ -1,0 +1,242 @@
+@import url(font-awesome.min.css);
+
+body {
+  font-size: 16px;
+  color: #fff;
+  /* background-color: #61122f; */
+  /* font-family: "Oxygen", sans-serif; */
+}
+.profile-image {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+/** HEADER **/
+
+#header {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* padding: 40px 60px 20px; */
+  background-position: center;
+  /* text-align: center; */
+}
+#header h1 {
+  font-size: 1.35em;
+  line-height: 1.75em;
+  margin: 0;
+}
+#header img {
+  border-radius: 100%;
+  box-shadow: 0 0 50px #cdcdcd;
+}
+
+#header a {
+  text-decoration: none;
+  color: #fff;
+}
+#header a:hover {
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: #4df9ff;
+}
+#header-top {
+  padding-top: 60px;
+}
+/* #content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+
+/* #profile{
+  background-color: blue;
+} */
+/* #about-me{
+  background-color: black;
+  margin-top: 50px;
+  padding: 50px;
+  opacity: .5;
+  border-radius: 40px;
+} */
+
+#about-me p {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 2;
+  margin-top: 50px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#text-uppercase {
+  text-transform: uppercase;
+}
+.quotes {
+  font-style: italic;
+  margin-left: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/** END HEADER **/
+
+#main-content h2 {
+  color: #272626;
+}
+
+/* WORK EXPERIENCE */
+
+#card {
+  /* box-shadow: 0 1px 5px 1px #cccccc; */
+  /* background-color: #272626; */
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card-left-tile {
+  background-color: #cdcdcd;
+  /* background-color: #eee; */
+  /* padding-bottom: 10px;
+  position: relative;
+  left: 53%;
+  top: 60%;
+  width: 100%;
+  text-transform: uppercase; */
+}
+#card-right-tile {
+  background-color: #272626;
+  /* padding-bottom: 10px; */
+  /* position: relative;
+  left: 53%;
+  top: 60%; */
+  width: 100%;
+  /* text-transform: uppercase; */
+}
+
+#card-title {
+  color: #272626;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 22px;
+}
+
+#card img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#card:nth-child(3) img {
+  height: 50px;
+}
+/* .workExperience-item-title {
+  background-color: #eee;
+} */
+
+/* HOBBY */
+
+#hobby {
+  color: black;
+}
+
+/* END HOBBY */
+/* FOTTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #cdcdcd;
+  border-top: 0;
+  text-align: center;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer ul {
+  padding: 0;
+}
+#footer ul li {
+  display: inline-block;
+  margin: 0 auto;
+}
+#footer li:nth-child(1),
+li:nth-child(2) {
+  padding-right: 1em;
+}
+
+/***** Large devices only (lg)*****/
+@media (min-width: 1200px) {
+  /* Home page */
+
+  /* End Home page */
+}
+
+/***** Medium devices only (md)*****/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  #profile h1 {
+  }
+  /* End Header */
+
+  /* Home page */
+
+  /* End Home page */
+}
+/***** Small devices only (sm)*****/
+@media (min-width: 768px) and (max-width: 991px) {
+  #profile {
+    text-align: center;
+  }
+  #profile .section .hr {
+    width: 50%;
+  }
+  .quotes {
+    margin-left: 0;
+  }
+
+  #about-me p {
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+
+/***** Extra small devices only (xs)*****/
+@media (max-width: 767px) {
+  /* #profile {
+    font-size: 0.6em;
+  }
+  #header img {
+    height: 150px;
+    width: 150px;
+  }
+  #about-me {
+    font-size: 0.75em;
+  } */
+  #header img {
+    height: 130px;
+    width: 130px;
+  }
+  #profile {
+    text-align: center;
+  }
+  #profile .section .hr {
+    width: 50%;
+  }
+  .quotes {
+    margin-left: 0;
+  }
+
+  #about-me p {
+    margin-top: 0;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    line-height: 2;
+    text-shadow: 0.1em 0.1em 0.2em black;
+  }
+}

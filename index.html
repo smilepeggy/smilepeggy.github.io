@@ -1,84 +1,135 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcom</title>
-    <link rel="stylesheet" href="stytle.css" />
+    <title>Peggy | Home(gibhub)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("#workExperience").load("snippets/workExperience.html");
+      });
+    </script> -->
   </head>
   <body>
-    <div class="search-box">
-      <input type="text" placeholder="Search..." />
-    </div>
-    <div class="nav-container">
-      <div class="wrapper">
-        <nav>
-          <div class="logo">
-            Ｗ.
+    <!-- Header -->
+    <header id="header">
+      <div id="header-top" class="container">
+        <section id="profile" class="col-md-4 col-xs-12">
+          <a href="#" class="image profile-image"
+            ><img src="images/peggy.png" height="180px" width="180px"
+          /></a>
+          <h1><a href="index.html">Pei-Chi Wang (Peggy)</a></h1>
+          <p class="text-uppercase">software developer</p>
+          <!-- <h1><a href="snippets/workExperience.html" >Work Experience</a></h1>
+            <h1><a href="snippets/hobby.html" >Hobby</a></h1> -->
+          <h1>
+            <a href="#workExperience">Work Experience</a>
+          </h1>
+          <h1><a href="#hobby">Hobby</a></h1>
+          <p class="quotes">
+            YOLO, Live Life with no regrets. <br />
+            Immer weiter lernen.
+          </p>
+          <hr class="hidden-md hidden-lg" />
+        </section>
+
+        <section id="about-me" class="col-md-8 col-xs-12">
+          <p>
+            Currently a Trainee Software Engineering at Volkswagen AG, Germany.
+            <br />
+            I am a self-learner, taking various courses and certificates to
+            train myself. <br />
+            An amateur folk singer and write the story into songs.
+          </p>
+        </section>
+      </div>
+    </header>
+
+    <div id="main-content" class="container">
+      <!-- Work Experience -->
+      <section id="workExperience">
+        <div class="text-center">
+          <h2>Work Experience</h2>
+        </div>
+        <div id="card" class="container" style="border: 1pt solid red">
+          <div id="card-left-tile col-sm-3 col-md-12">
+            <p id="card-title">Volkswagen AG</p>
+            <img
+              class="img-responsive"
+              width="50"
+              height="50"
+              src="images/vw.svg"
+              alt="VW-Logo"
+            />
           </div>
 
-          <ul class="nav-items">
-            <li>
-              <a href="#">blog</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
-            <li>
-              <a href="#">about</a>
-            </li>
-            <li>
-              <a class="nav-btn-container" href="#">
-                <img class="search-btn" src="images/search-icon.svg" alt="" />
-                <img class="close-btn" src="images/close-icon.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="header-container">
-      <div class="wrapper">
-        <header>
-          <div class="hero-content">
-            <h1>Hi, I am Peggy</h1>
-            <p>
-              This is a practice with Figma UI design
+          <div id="card-right-tile col-sm-9">
+            <h3 class="workExperience-title">Software Engineer</h3>
+            <h4 id="start-time">since 2021.03</h4>
+            <p class="workExperience-details">
+              Currently as a Trainee in Fakultät 73 at Volkswagen AG as a junior
+              software developer.
             </p>
-            <a href="#">Contact me</a>
           </div>
-          <div class="hero-image">
-            <img src="images/photo1.png" alt="" />
-            <div class="photo-bg"></div>
+        </div>
+      </section>
+
+      <!-- Hobby -->
+      <section id="hobby">
+        <div class="text-center">
+          <h2>Hobby</h2>
+        </div>
+        <div class="card col-md-12">
+          <div class="card-left-tile col-sm-3">
+            <p>Hummungbird</p>
           </div>
-        </header>
-<!-- 
-        <div class="social-icons">
-          <a href="#">
-            <img src="images/ig-logo.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="images/behance.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="images/dribbble-logo.png" alt="" />
-          </a>
-        </div> -->
-      </div>
+          <div class="card-right-tile col-sm-9"></div>
+        </div>
+      </section>
     </div>
-    <script src="main.js"></script>
+
+    <!-- End of #main-content -->
+
+    <!-- Footer -->
+    <footer id="footer" class="panel-footer">
+      <!-- <div class="container text-center">
+        <ul class="">
+          <li>
+            <a
+              href="https://github.com/smilepeggy"
+              class="fa fa-github fa-2x"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:peggy22509385@gmail.com"
+              class="fa fa-envelope-o fa-2x"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pei-chi-wang-a8b691187/"
+              class="fa fa-linkedin fa-2x"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+        <div class="text-center">&copy; 2021 All rights reserved</div>
+      </div> -->
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#footer").load("snippets/footer.html");
+      });
+    </script>
+    <script src="js/script.js"></script>
   </body>
-</html> -->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I am Peggy</title>
-</head>
-<body>
-  <h1>test test</h1>
-</body>
 </html>
